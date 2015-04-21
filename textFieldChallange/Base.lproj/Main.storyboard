@@ -43,12 +43,10 @@
                         <constraints>
                             <constraint firstItem="3nR-CF-K09" firstAttribute="top" secondItem="DBS-Lu-RmL" secondAttribute="bottom" constant="7" id="7Ny-S0-qmB"/>
                             <constraint firstItem="DBS-Lu-RmL" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="AAi-4w-e2F"/>
-                            <constraint firstAttribute="centerY" secondItem="USb-sv-nMr" secondAttribute="centerY" constant="257" id="DIx-Ft-IyY"/>
                             <constraint firstItem="SrJ-QL-qpt" firstAttribute="height" secondItem="DBS-Lu-RmL" secondAttribute="height" id="J3p-DN-v6T"/>
                             <constraint firstItem="3nR-CF-K09" firstAttribute="leading" secondItem="SrJ-QL-qpt" secondAttribute="trailing" constant="8" id="JpV-Yk-UzT"/>
                             <constraint firstItem="USb-sv-nMr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LPx-ug-2NI"/>
                             <constraint firstItem="SrJ-QL-qpt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NFF-lL-CU2"/>
-                            <constraint firstAttribute="centerY" secondItem="DBS-Lu-RmL" secondAttribute="centerY" constant="219" id="Vz4-bw-rqh"/>
                             <constraint firstItem="3nR-CF-K09" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YU7-EK-IU9"/>
                             <constraint firstItem="USb-sv-nMr" firstAttribute="height" secondItem="DBS-Lu-RmL" secondAttribute="height" id="b6r-KO-V4Y"/>
                             <constraint firstItem="SrJ-QL-qpt" firstAttribute="top" secondItem="DBS-Lu-RmL" secondAttribute="bottom" constant="8" id="ey1-uV-i7o"/>
