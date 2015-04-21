@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="textFieldChallange" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USb-sv-nMr">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qFN-xb-kJf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBS-Lu-RmL">
+                                <rect key="frame" x="16" y="66" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SrJ-QL-qpt">
+                                <rect key="frame" x="16" y="104" width="511" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nR-CF-K09">
+                                <rect key="frame" x="535" y="103" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3nR-CF-K09" firstAttribute="top" secondItem="DBS-Lu-RmL" secondAttribute="bottom" constant="7" id="7Ny-S0-qmB"/>
+                            <constraint firstItem="DBS-Lu-RmL" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="AAi-4w-e2F"/>
+                            <constraint firstAttribute="centerY" secondItem="USb-sv-nMr" secondAttribute="centerY" constant="257" id="DIx-Ft-IyY"/>
+                            <constraint firstItem="SrJ-QL-qpt" firstAttribute="height" secondItem="DBS-Lu-RmL" secondAttribute="height" id="J3p-DN-v6T"/>
+                            <constraint firstItem="3nR-CF-K09" firstAttribute="leading" secondItem="SrJ-QL-qpt" secondAttribute="trailing" constant="8" id="JpV-Yk-UzT"/>
+                            <constraint firstItem="USb-sv-nMr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LPx-ug-2NI"/>
+                            <constraint firstItem="SrJ-QL-qpt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NFF-lL-CU2"/>
+                            <constraint firstAttribute="centerY" secondItem="DBS-Lu-RmL" secondAttribute="centerY" constant="219" id="Vz4-bw-rqh"/>
+                            <constraint firstItem="3nR-CF-K09" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YU7-EK-IU9"/>
+                            <constraint firstItem="USb-sv-nMr" firstAttribute="height" secondItem="DBS-Lu-RmL" secondAttribute="height" id="b6r-KO-V4Y"/>
+                            <constraint firstItem="SrJ-QL-qpt" firstAttribute="top" secondItem="DBS-Lu-RmL" secondAttribute="bottom" constant="8" id="ey1-uV-i7o"/>
+                            <constraint firstItem="DBS-Lu-RmL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hax-He-IVe"/>
+                            <constraint firstItem="DBS-Lu-RmL" firstAttribute="top" secondItem="USb-sv-nMr" secondAttribute="bottom" constant="8" id="lGP-6c-dHn"/>
+                            <constraint firstItem="USb-sv-nMr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="rOz-Gp-YAj"/>
+                            <constraint firstItem="USb-sv-nMr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="uHo-We-n4N"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
