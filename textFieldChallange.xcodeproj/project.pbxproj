@@ -13,6 +13,8 @@
 		69C01E391AE665D1009A37EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C01E381AE665D1009A37EC /* Images.xcassets */; };
 		69C01E3C1AE665D1009A37EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C01E3A1AE665D1009A37EC /* LaunchScreen.xib */; };
 		69C01E481AE665D1009A37EC /* textFieldChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C01E471AE665D1009A37EC /* textFieldChallangeTests.swift */; };
+		69CF855D1AE7AD4B006AE18F /* zipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF855C1AE7AD4B006AE18F /* zipCodeTextFieldDelegate.swift */; };
+		69CF855F1AE7AF45006AE18F /* cashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF855E1AE7AF45006AE18F /* cashTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		69C01E411AE665D1009A37EC /* textFieldChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textFieldChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C01E461AE665D1009A37EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69C01E471AE665D1009A37EC /* textFieldChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldChallangeTests.swift; sourceTree = "<group>"; };
+		69CF855C1AE7AD4B006AE18F /* zipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		69CF855E1AE7AF45006AE18F /* cashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				69C01E381AE665D1009A37EC /* Images.xcassets */,
 				69C01E3A1AE665D1009A37EC /* LaunchScreen.xib */,
 				69C01E2F1AE665D1009A37EC /* Supporting Files */,
+				69CF855C1AE7AD4B006AE18F /* zipCodeTextFieldDelegate.swift */,
+				69CF855E1AE7AF45006AE18F /* cashTextFieldDelegate.swift */,
 			);
 			path = textFieldChallange;
 			sourceTree = "<group>";
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CF855D1AE7AD4B006AE18F /* zipCodeTextFieldDelegate.swift in Sources */,
+				69CF855F1AE7AF45006AE18F /* cashTextFieldDelegate.swift in Sources */,
 				69C01E341AE665D1009A37EC /* ViewController.swift in Sources */,
 				69C01E321AE665D1009A37EC /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +417,7 @@
 				69C01E4D1AE665D1009A37EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69C01E4E1AE665D1009A37EC /* Build configuration list for PBXNativeTarget "textFieldChallangeTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				69C01E501AE665D1009A37EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
