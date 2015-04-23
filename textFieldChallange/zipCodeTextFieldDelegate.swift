@@ -16,11 +16,14 @@ class zipCodeTextFieldDelegate: NSObject, UITextFieldDelegate {
             return true
         }
         
-        println("count: " + toString(count(textField.text)))
         let properLength = count(textField.text) < 5;
         let itsOnlyDigits = string.rangeOfCharacterFromSet(NSCharacterSet(charactersInString: "1234567890").invertedSet) == nil
         
         return properLength && itsOnlyDigits
     }
     
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+        return true
+    }
+
 }

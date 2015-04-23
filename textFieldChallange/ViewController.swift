@@ -37,6 +37,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return self.lockSwitch.on
     }
     
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+        return self.lockSwitch.on
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
